@@ -81,6 +81,17 @@ For questions, suggestions, or further information, please contact:
 📧 [oelamraoui34@gmail.com](mailto:oelamraoui34@gmail.com)
 
 ---
+## 📖 Citation
+
+If you find this work useful in your research, please consider citing the accompanying paper:
+
+> **O. Elamraoui, E.-H. Essoufi, A. Zafrar**,  
+> *Switching Cases for Fractional Time SEIR Model with Memory and Space Diffusion*,  
+> Submitted to *Computational and Applied Mathematics*, 2025.
+
+Thank you for your interest in our research!
+
+---
 
 ## 🌐 More Information
 
