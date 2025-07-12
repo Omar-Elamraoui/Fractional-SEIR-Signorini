@@ -1,4 +1,6 @@
-# Fractional Temporal SEIR Model with Signorini Boundary Conditions
+# Fractional Temporal SEIR Model with memory and diffusion
+
+
 
 **Authors:** Omar Elamraoui, EL Hassan Essoufi, Abderrahim Zafrar  
 **© 2025 O. Elamraoui, E-H. Essoufi, A. Zafrar. All rights reserved.**
@@ -7,6 +9,7 @@ This repository contains MATLAB code for simulating, analyzing, and visualizing 
 
 > *Switching Cases for Fractional Time SEIR Model with Memory and Space Diffusion*
 
+**Submitted to:** *Computational and Applied Mathematics*
 ---
 
 ## 📁 Files Included
@@ -79,3 +82,8 @@ For questions, suggestions, or further information, please contact:
 
 ---
 
+## 🌐 More Information
+
+🔗 [Visit My Academic Site](https://sites.google.com/view/oelamraoui/home)
+
+---
