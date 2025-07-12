@@ -1,92 +1,81 @@
-================================================================================
-FRACTIONAL TEMPORAL SEIR MODEL WITH SIGNORINI BOUNDARY CONDITIONS
-================================================================================
-Authors: Omar Elamraoui, EL Hassan Essoufi, Abderrahim Zafrar  
-Copyright © O.Elamraoui, E-H.Essoufi, A.Zafrar, 2025. All rights reserved.
+# Fractional Temporal SEIR Model with Signorini Boundary Conditions
 
-This supplementary material contains MATLAB code for simulating, analyzing, 
-and visualizing a fractional-order SEIR epidemic model with memory effects 
-and Signorini boundary conditions, as presented in:
+**Authors:** Omar Elamraoui, EL Hassan Essoufi, Abderrahim Zafrar  
+**© 2025 O. Elamraoui, E-H. Essoufi, A. Zafrar. All rights reserved.**
 
-"Switching Cases for Fractional Time SEIR Model with Memory and Space Diffusion"
+This repository contains MATLAB code for simulating, analyzing, and visualizing a **fractional-order SEIR epidemic model** with memory effects and **Signorini boundary conditions**, as presented in the paper:
 
-================================================================================
-FILES INCLUDED
-================================================================================
+> *Switching Cases for Fractional Time SEIR Model with Memory and Space Diffusion*
 
-📂 **Main Simulation and Analysis Files**
-----------------------------------------
+---
 
-🔹 `Main_SEIR_Frac_Memory.m`  
-Main driver script for the SEIR model with fractional temporal memory and Signorini 
-boundary conditions.  
-- Runs simulations and generates output plots.
-- Configurable for different parameter studies (e.g., infection rate, recovery rate).
+## 📁 Files Included
 
-🔹 `show_Sensitivity_Param.m`  
-Driver script to:
-- Perform sensitivity analysis by varying a parameter.
-- Generate plots for S, E, I, R over time for each parameter setting.
+### 🔷 Main Simulation and Analysis Files
+- **`Main_SEIR_Frac_Memory.m`**  
+  Main driver script to simulate the SEIR model with fractional memory and Signorini boundary conditions.  
+  Generates plots and supports parametric studies.
 
-🔹 `SEIR_Show_var_alpha.m`  
-Script for:
-- Studying and plotting the effect of varying the fractional-order parameter `alpha`
-  on the SEIR dynamics.
+- **`show_Sensitivity_Param.m`**  
+  Sensitivity analysis of SEIR dynamics with respect to a chosen parameter.  
+  Produces time-series plots for S, E, I, R components.
 
-🔹 `SEIR_var_alpha_fun.m`  
-Function supporting `SEIR_Show_var_alpha.m`:
-- Runs simulations across different `alpha` values.
-- Returns the time evolution of SEIR components.
+- **`SEIR_Show_var_alpha.m`**  
+  Studies the impact of varying the fractional-order parameter `alpha` on the SEIR dynamics.
 
-📂 **Core Functions**
----------------------
+- **`SEIR_var_alpha_fun.m`**  
+  Supporting function for `SEIR_Show_var_alpha.m`.  
+  Returns SEIR evolution for a set of `alpha` values.
 
-🔹 `analyze_param_impact.m`  
-- Runs SEIR simulations for a range of values of a specified parameter (e.g., `\beta`, `\gamma`, `\alpha`).  
-- Returns S, E, I, R solutions in cell arrays for easy comparison.
+### 🔷 Core Functions
+- **`analyze_param_impact.m`**  
+  Executes SEIR simulations across multiple values of parameters (`β`, `γ`, `α`, etc.).  
+  Returns S, E, I, R trajectories for comparison.
 
-🔹 `run_SEIR_simulation.m`  
-- Solves the fractional-order SEIR model over space and time using FEM and Uzawa's method.
-- Incorporates memory effects and Signorini boundary conditions.
-- Returns S, E, I, R matrices over time.
+- **`run_SEIR_simulation.m`**  
+  Core solver using the Finite Element Method (FEM) and Uzawa’s method to simulate the SEIR model with fractional time memory and Signorini boundary conditions.
 
-🔹 `UzawaSignoriniSolver.m`  
-- Solves the variational inequality for Signorini boundary conditions using a regularized Uzawa method.
-- Returns solution vector, boundary projections, Lagrange multipliers, and error metrics.
+- **`UzawaSignoriniSolver.m`**  
+  Regularized Uzawa solver for the variational inequality with Signorini boundary conditions.  
+  Returns numerical solution, projections, multipliers, and convergence metrics.
 
-📂 **Helper Functions**
-----------------------
+### 🔷 Helper Functions
+- **`kpde2dumsh.m`, `kpde2dstf.m`, `kpde2drhs.m`, `kpde2dmss.m`**  
+  Helper functions for mesh generation, finite element assembly, and right-hand side computations.
 
-🔹 `kpde2dumsh.m`, `kpde2dstf.m`, `kpde2drhs.m`, `kpde2dmss.m`  
-- Generate meshes, assemble finite element matrices, and compute RHS vectors.
+---
 
-================================================================================
-REQUIREMENTS
-================================================================================
-✅ MATLAB R2019b or newer (recommended)  
-✅ No specialized toolboxes required — only standard MATLAB functions  
+## 💻 Requirements
 
-================================================================================
-USAGE
-================================================================================
-1️⃣ Run `Main_SEIR_Frac_Memory.m` or `show_Sensitivity_Param.m` to perform a simulation 
-   or parameter sensitivity analysis.
+- MATLAB **R2019b or newer** (recommended)
+- No specialized toolboxes required (uses standard MATLAB functions)
 
-2️⃣ Run `SEIR_Show_var_alpha.m` to explore the effect of fractional order `alpha`.
+---
 
-3️⃣ Figures will be generated and saved in `.jpg` and `.eps` formats with informative filenames.
+## 🚀 How to Use
 
-4️⃣ You can modify parameter ranges directly in the respective scripts.
+1. Run **`Main_SEIR_Frac_Memory.m`** or **`show_Sensitivity_Param.m`** to simulate the SEIR model or analyze parameter sensitivity.
+2. Use **`SEIR_Show_var_alpha.m`** to explore the effect of the fractional-order parameter `alpha`.
+3. Output plots will be generated and saved in `.jpg` and `.eps` formats with descriptive filenames.
+4. Modify parameter ranges and simulation settings directly in the scripts for custom analysis.
 
-================================================================================
-ACKNOWLEDGMENTS
-================================================================================
-Finite element matrix assembly methods adapted from:
-Koko J., *Fast finite element assembly in MATLAB and Octave*, 2016.  
-https://perso.isima.fr/~jokoko/codes.html  
+---
 
-================================================================================
-CONTACT
-================================================================================
-For questions or further details, please contact:  
-Omar Elamraoui (oelamraoui34@gmail.com)
+## 📚 Acknowledgments
+
+Finite element matrix assembly routines adapted from:
+
+**Koko, J. (2016)** – *Fast finite element assembly in MATLAB and Octave*  
+[https://perso.isima.fr/~jokoko/codes.html](https://perso.isima.fr/~jokoko/codes.html)
+
+---
+
+## 📬 Contact
+
+For questions, suggestions, or further information, please contact:
+
+**Omar Elamraoui**  
+📧 [oelamraoui34@gmail.com](mailto:oelamraoui34@gmail.com)
+
+---
+
