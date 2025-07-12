@@ -89,4 +89,4 @@ https://perso.isima.fr/~jokoko/codes.html
 CONTACT
 ================================================================================
 For questions or further details, please contact:  
-Omar Elamraoui (omar.elamraoui@university.edu)
+Omar Elamraoui (oelamraoui34@gmail.com)
