@@ -81,13 +81,20 @@ For questions, suggestions, or further information, please contact:
 📧 [oelamraoui34@gmail.com](mailto:oelamraoui34@gmail.com)
 
 ---
+
 ## 📖 Citation
 
-If you find this work useful in your research, please consider citing the accompanying paper:
+If you find this work useful in your research, please consider citing:
 
+**📄 Journal Article:**
 > **O. Elamraoui, E.-H. Essoufi, A. Zafrar**,  
 > *Switching Cases for Fractional Time SEIR Model with Memory and Space Diffusion*,  
 > Submitted to *Computational and Applied Mathematics*, 2025.
+
+**📦 Software Archive (Zenodo DOI):**  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15986998.svg)](https://doi.org/10.5281/zenodo.15986998)
+> **O. Elamraoui, E.-H. Essoufi, A. Zafrar** (2025). *Code for Switching Cases in Fractional SEIR Models*. Zenodo. [https://doi.org/10.5281/zenodo.15986998](https://doi.org/10.5281/zenodo.15986998)
+
 
 Thank you for your interest in our research!
 
